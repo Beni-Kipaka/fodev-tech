@@ -913,6 +913,30 @@ body{
 
 
 /* RESPONSIVE 575px */
+
+@media screen and (min-width: 320px){
+  .contact form .btn{
+    font-size: .6rem;
+    font-weight: var(--fw-500);
+  }
+
+  .contact form h3 {
+    font-size: 1.4rem;
+    color: var(--black-coral);
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+
+  .contact form textarea {
+    height: 7rem;
+    resize: none;
+    font-size: .9rem;
+    padding: 0.5rem;
+}
+}
+
+
+
 @media screen and (min-width: 575px) {
   /* Styles reutilisables */
 
@@ -923,6 +947,8 @@ body{
   .section-title-contact{
     font-size: 2rem;
   }
+
+  
 
 
   /* FEATURES */
