@@ -654,7 +654,7 @@ body{
   padding: 1.4rem;
   color: var(--black-coral);
   font-size: 1.2rem;
-  background-color: var(--cultured);
+  background-color: var(--white);
   margin: 1rem 0;
   border: 1px solid var(--black-coral);
 }
@@ -663,6 +663,8 @@ body{
 .contact form select,
 .contact form textarea:focus{
     outline-color: var(--red-crayola);
+    /* color: var(--black-coral);
+    background-color: var(--white); */
 }
 
 .contact form p{
