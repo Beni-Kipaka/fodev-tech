@@ -55,6 +55,9 @@
   --radius-4: 4px;
   --radius-8: 8px;
   --radius-12: 12px;
+
+  /* BOX-SHADOW */
+  --box-shodow: 0 5px 25px 10px hsla(0, 0%, 0%, 0.2);
 }
 
 
@@ -65,7 +68,7 @@
 /* DEMARRAGE */
 ::selection{
   color: var(--white);
-  background: var(--blue-ryb);
+  background: var(--red-crayola);
 }
 
 *, *::before, *::after {
@@ -174,7 +177,8 @@ body{
 }
 
 .btn > i{
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: var(--fw-700);
 }
 
 .btn-primary:is(:hover, :focus){
@@ -190,11 +194,24 @@ body{
   background: var(--red-crayola);
 }
 
+
+
 .section-subtitle{
   color: var(--black-coral);
   font-size: var(--fs-5);
   font-weight: var(--fw-600);
   margin-bottom: 15px;
+}
+
+.section-title-contact{
+  margin-top: 7rem;
+  border-top: 1rem solid var(--blue-ryb);
+  border-bottom: 1rem solid var(--blue-ryb);
+  background: var(--black-coral);
+  color: var(--white);
+  text-align: center;
+  padding: 4rem 2rem;
+  font-size: 3rem;
 }
 
 
@@ -265,7 +282,8 @@ body{
 }
 
 .logo img{
-  width: 160px;
+  width: 120px;
+  height: 50px;
 }
 
 .nav-toggle-btn{
@@ -594,6 +612,119 @@ body{
 
 
 
+/* CONTACT SECTION STATRS */
+.contact .box-container{
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 28rem);
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.contact .box-container .box{
+  
+  background-color: var(--white);
+  border: 1px solid var(--black-coral);
+  border-radius: .5rem;
+  box-shadow: var(--box-shodow);
+  padding: 1rem;
+  font-size: .8rem;
+}
+
+.contact .box-container .box i{
+  height: 4rem;
+  width: 4rem;
+  line-height: 4rem;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--blue-ryb);
+  border-radius: .5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact .box-container .box a{
+  display: block;
+  padding-top: .5rem;
+  color: var(--black-coral);
+  line-height: 1;
+}
+
+.contact form{
+  margin-top: 2rem;
+  background-color: var(--white);
+  border: 1px solid var(--black-coral);
+  border-radius: .5rem;
+  box-shadow: var(--box-shodow);
+  padding: 2rem;
+  text-align: center;
+}
+
+.contact form h3{
+  font-size: 2.5rem;
+  color: var(--black-coral);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.contact form .flex{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+}
+
+.contact form .flex .box{
+  flex: 1 1 40rem;
+}
+
+.contact form input{
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact form .input,
+.contact form select,
+.contact form textarea{
+  width: 100%;
+  border-radius: .5rem;
+  padding: 1.4rem;
+  color: var(--black-coral);
+  font-size: 1.2rem;
+  background-color: var(--cultured);
+  margin: 1rem 0;
+  border: 1px solid var(--black-coral);
+}
+
+.contact form .input,
+.contact form select,
+.contact form textarea:focus{
+    outline-color: var(--red-crayola);
+}
+
+.contact form p{
+  text-align: left;
+  font-size: 1.2rem;
+  padding-top: 1rem;
+  color: var(--black-coral);
+}
+
+.contact form p span{
+  color: var(--red-crayola);
+  display: inline-flex;
+}
+
+.contact form textarea{
+  height: 15rem;
+  resize: none;
+}
+/* CONTACT SECTION ENDS */
+
+
+
+
+
+
 /* SECTION FOOTER STARTS */
 .footer-top{
   padding-block: var(--section-padding);
@@ -819,12 +950,16 @@ body{
 
 
 /* RESPONSIVE 575px */
-
 @media screen and (min-width: 575px) {
   /* Styles reutilisables */
+
   .container{
     max-width: 520px;
     margin-inline: auto;
+  }
+
+  .section-title-contact{
+    font-size: 2rem;
   }
 
 
@@ -850,6 +985,10 @@ body{
   
   html {
     font-size: 17.5px;
+  }
+
+  .section-title-contact{
+    font-size: 3rem;
   }
 
   :root{
@@ -939,6 +1078,10 @@ body{
   
   html{
     font-size: 18px;
+  }
+
+  .section-title-contact{
+    font-size: 3.5rem;
   }
 
 
@@ -1144,6 +1287,10 @@ body{
     --fs-2: 2.333rem;
     --fs-3: 1.222rem;
     --fs-4: 0.944rem;
+  }
+
+  .section-title-contact{
+    font-size: 4rem;
   }
 
 

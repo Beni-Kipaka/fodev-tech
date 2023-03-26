@@ -1,20 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS FILES -->
-    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Nous Contacter</title>
+
+    <!-- =====OPENGRAPH===== -->
+    <meta property="og:site_name" content="fodev-rdc">
+    <meta property="og:title" content="Contactez Nous">
+    <meta property="og:url" content="https://beni-kipaka.github.io/fodev-tech">
+    <meta property="og:type" content="blog">
+    <meta property="og:image" content="https://beni-kipaka.github.io/fodev-tech/assets/images/logometa.png">
+    <meta property="og:image:secure_url" content="https://beni-kipaka.github.io/fodev-tech/assets/images/logometa.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:description" content="Laissez nous un message dans cet espace !!!">
 
 
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/images/logo_fodev.png" type="image/x-icon">
 
-    <title>Nous Contactez</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- BOOTSTRAP ICONS LINK -->
+    <link rel="stylesheet" href="./assets/bootstrap-icons/bootstrap-icons.css">
+
 </head>
-<body>
-    <h1>
-        Contactez Nous
-    </h1>
+
+
+
+<body id="top">
+
+
+    <!-- HEADER STARTS -->
+    <header class="header active" data-header>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/logo_fodev.png" alt="logo du site">
+            </a>
+
+            <button class="nav-toggle-btn" data-nav-toggle-btn>
+                <i class="bi bi-list open"></i>
+                <i class="bi bi-x-lg close"></i>
+            </button>
+
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+                        <li>
+                            <li><a href="#home" class="navbar-link">Accueil</a></li>
+                            <li><a href="#features" class="navbar-link">Specialite</a></li>
+                            <li><a href="#service" class="navbar-link">Services</a></li>
+                            <li><a href="#blog" class="navbar-link">Blog</a></li>
+                            <li><a href="#newsletter" class="navbar-link">Newsletter</a></li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <button class="btn btn-secondary">
+                <a style="color: white;" href="#newsletter"><span>Contacter</span></a>                 
+                <i class="bi bi-chevron-double-right"></i>
+            </button>
+
+        </div>
+    </header>
+    <!-- HEADER ENDS -->
+
+
+
+    <div class="container">
+        <!-- Contact us section starts -->
+        <div class="section-title-contact">Nous Contactez</div>
+
+
+        <section class="contact">
+            <div class="box-container">
+
+                <div class="box">
+                    <i class="bi bi-telephone"></i>
+                    <a href="tel:+243824775595">+243 824 775 595</a>
+                    <a href="tel:+243828060445">+243 828 060 445</a>
+                </div>
+
+                <div class="box">
+                    <i class="bi bi-chat"></i>
+                    <a href="tel:+243824775595">+243 824 775 595</a>
+                    <a href="mailto:focusdeveloppeurs001@gmail.com">focusdeveloppeurs001@gmail.com</a>
+                    <a href="mailto:bonjour@fodev-rdc.com">bonjour@fodev-rdc.com</a>
+                </div>
+
+                <div class="box">
+                    <i class="bi bi-house-fill"></i>
+                    <a href="#">39 Bis, Av. Abattoir, C/Masina, Kinshasa, RD Congo.</a>
+                </div>
+
+
+
+            
+
+            </div>
+
+            <form action="" method="post">
+                <h3>écrivez votre message</h3>
+                <div class="flex">
+                    <div class="box">
+                        <p>Name <span>*</span></p>
+                        <input type="text" name="name" id="name" required maxlength="30" placeholder="Entrer votre nom" class="input">
+                    </div>
+
+                    <div class="box">
+                        <p>E-mail <span>*</span></p>
+                        <input type="email" name="email" id="email" required maxlength="30" placeholder="Entrer votre adresse mail" class="input">
+                    </div>
+
+                    <div class="box">
+                        <p>Numero <span>*</span></p>
+                        <input type="number" name="number" id="number" required min="0" max="9999999999" maxlength="15" placeholder="Entrer votre numero de telephone" class="input">
+                    </div>
+
+                    <div class="box">
+                        <p>Objet <span>*</span></p>
+                        <select name="role" id="role">
+                            <option value="website">Besoin d'un site web</option>
+                            <option value="conversation">Besoin de parler avec un expert</option>
+                            <option value="projet">J'un un projet</option>
+                        </select>
+                    </div>
+                </div>
+                <p>Message <span>*</span></p>
+                <textarea name="message" id="message" required maxlength="1000" placeholder="Veuillez saisir votre message" cols="30" rows="10"></textarea>
+
+                <input type="submit" value="Envoyer votre nessage" class="btn btn-primary">
+            </form>
+
+
+
+        </section>
+        <!-- Contact us section ends -->
+    </div>
+
+
+
+
+
+    
+
+
+
+
+
+
+    <!-- SECTION FOOTER STARTS -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="logo">
+                        <img src="assets/images/logo_fodev.png" alt="logo de fodev">
+                    </a>
+
+                    <p class="section-text">
+                        Focus Développeurs RDC Tech (FODEV-RDC Tech en sigle), est une StarUp Révolutionnaire basé
+                        à Kinshasa et évoluant dans le Développement des sites et Applications web.
+                    </p>
+
+                    <div class="location-text">
+                        <div class="location-icon">
+                            <i class="bi bi-house-fill"></i>
+                        </div>
+
+                        <address class="address">
+                            39 Bis, Av. Abattoir, C/Masina, Kinshasa, RD Congo.
+                        </address>
+
+                    </div>
+
+                    
+
+                </div>
+
+                <div class="quicklink-box">
+                    <p class="h3 quicklink-title">Liens Utiles</p>
+
+                    <ul class="quicklink-list">
+                        <li>
+                            <a href="#" class="quicklink">StarUp IT</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="quicklink">Business</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="quicklink">App</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="quicklink">Medical</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="quicklink">Big Data</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="quicklink">Assurance</a>
+                        </li>
+                    </ul>
+                </div>
+
+                    <div class="contact">
+                        <p class="h3 contact-title">Nous Contacter</p>
+
+                        <ul class="contact-list">
+
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-chat"></i>
+                                </div>
+
+                                <a href="mailto:benikipaka243@gmail.com" class="contact-link">bonjour@fodev-rdc.com</a>
+                            </li>
+
+                            <li class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="bi bi-telephone"></i>
+                                </div>
+
+                                <a href="tel:+243824775595" class="contact-link">+243 824 775 595</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2023 <a href="https://beni-kipaka.github.io/benikipaka">Focus Developpeurs</a>. Tous droits reservés
+                </p>
+
+                <ul class="social-list">
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="social-link">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                
+
+            </div>
+        </div>
+        <div class="design">
+            <div>
+                <span>Designed By <span></span>
+            </div> 
+
+            <div>
+                <a href="https://beni-kipaka.github.io/benikipaka">Beni Kipaka</a>
+            </div>
+
+            <div>
+                 <i class="bi bi-heart-fill" style="color: hsl(342, 100%, 50%);"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- SECTION FOOTER ENDS -->
+
+
+
+
+
+
+
+
+
+
+    <!-- TOP BTN STARTS -->
+    <a href="#top" class="go-top active" data-go-top>
+        <i class="bi bi-chevron-double-up"></i>
+    </a>
+    <!-- TOP BTN ENDS -->
+
+
+
+
+
+
+    <!-- JS LINK -->
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
