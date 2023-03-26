@@ -765,6 +765,7 @@ body{
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
+  padding-bottom: 1rem;
 }
 
 .contact-item:first-child{
