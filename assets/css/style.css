@@ -613,44 +613,6 @@ body{
 
 
 /* CONTACT SECTION STATRS */
-.contact .box-container{
-  padding: 2rem 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 20rem);
-  gap: 1.5rem;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.contact .box-container .box{
-  
-  background-color: var(--white);
-  border: 1px solid var(--black-coral);
-  border-radius: .5rem;
-  box-shadow: var(--box-shodow);
-  padding: 1rem;
-  font-size: .8rem;
-}
-
-.contact .box-container .box i{
-  height: 4rem;
-  width: 4rem;
-  line-height: 4rem;
-  font-size: 1.5rem;
-  color: var(--white);
-  background-color: var(--blue-ryb);
-  border-radius: .5rem;
-  text-align: center;
-  margin-bottom: 1.5rem;
-}
-
-.contact .box-container .box a{
-  display: block;
-  padding-top: .5rem;
-  color: var(--black-coral);
-  line-height: 1;
-}
-
 .contact form{
   margin-top: 2rem;
   background-color: var(--white);
